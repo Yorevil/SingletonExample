@@ -14,7 +14,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
         TextView welcomeText = (TextView) findViewById(R.id.text_view_welcome);
         //welcomeText.setText("Welcome : " + SingletonExample.getInstance().getUsername());
-        String string = Cache.getInstance().getLruCache().get("person_lastname").toString() + Cache.getInstance().getLruCache().get("person_firstname").toString();
+        String string = Cache.getInstance().getLruCache().get("person_lastname").toString() + " " + Cache.getInstance().getLruCache().get("person_firstname").toString();
         welcomeText.setText(string);
     }
 }
